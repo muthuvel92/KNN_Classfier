@@ -9,7 +9,7 @@ This is how K-Nearest Neighbors (KNN) works! It looks at the "closest" data poin
 
 Imagine you’re setting up a game at the park where you guess what new kids will play based on their neighbors. In this game, you have some rules or settings you can choose to make your guesses better. These settings are like the parameters in sklearn's KNN. 
 
-    **1. n_neighbors**
+ **1. n_neighbors**
 This is like deciding how many nearby kids you’ll look at to make your guess.
         ◦ Example: Do you want to look at 3 kids close to the new kid? Or maybe 5? This number is your "K."
         
