@@ -7,6 +7,8 @@ Now, let’s say you see a new kid walk into the park, and you want to guess wha
 You could look at the kids closest to the new kid. If most of the nearby kids are playing soccer, you might guess the new kid will join them. If most are on the swings, you’d guess the new kid will probably head to the swings.
 This is how K-Nearest Neighbors (KNN) works! It looks at the "closest" data points (like the nearby kids) and guesses what the new data point (the new kid) is likely to do based on what its neighbors are doing.
 
+**KNN Sklearn Parameter Explanation**
+
 Imagine you’re setting up a game at the park where you guess what new kids will play based on their neighbors. In this game, you have some rules or settings you can choose to make your guesses better. These settings are like the parameters in sklearn's KNN. 
 
  **1. n_neighbors**
@@ -32,12 +34,16 @@ This is how you measure "closeness" between kids.
    ** 5. metric**
 This is the tool you use to measure distance between kids. For most parks, we just use "minkowski", which works with the p value above.
 
-What does leaf_size do?
+**What does leaf_size do?**
 It controls how many kids (data points) can fit into the smallest group, or "leaf."
-    • If leaf_size is small:
+
+  **  • If leaf_size is small:**
 Each group will be tiny, so the tree will be more detailed. Finding neighbors might take longer but can be more accurate.
-    • If leaf_size is large:
+
+   ** • If leaf_size is large:**
+   
 Each group will be bigger, so the tree will be simpler and faster to search, but it might be less precise.
+
 Why does it matter?
     • Speed: A smaller leaf_size can slow down the search for neighbors because it has to check more groups.
     • Memory: A larger leaf_size uses less memory because the tree is simpler.
