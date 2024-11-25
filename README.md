@@ -8,23 +8,23 @@ You could look at the kids closest to the new kid. If most of the nearby kids ar
 This is how K-Nearest Neighbors (KNN) works! It looks at the "closest" data points (like the nearby kids) and guesses what the new data point (the new kid) is likely to do based on what its neighbors are doing.
 
 Imagine you’re setting up a game at the park where you guess what new kids will play based on their neighbors. In this game, you have some rules or settings you can choose to make your guesses better. These settings are like the parameters in sklearn's KNN. 
-    1. n_neighbors
+    **1. n_neighbors**
 This is like deciding how many nearby kids you’ll look at to make your guess.
         ◦ Example: Do you want to look at 3 kids close to the new kid? Or maybe 5? This number is your "K."
-    2. weights
+**    2. weights**
 This is how much importance you give to the nearby kids when guessing.
         ◦ "uniform": You treat all the kids the same—every kid's choice counts equally.
         ◦ "distance": Closer kids are more important! Their choices matter more in your guess.
-    3. algorithm
+  **  3. algorithm**
 This is like choosing how to run around the park to find the nearby kids.
         ◦ "auto": Let the computer decide the best way.
         ◦ "ball_tree" or "kd_tree": These are special ways to organize the park so it’s faster to find neighbors.
         ◦ "brute": Just check every kid one by one.
-    4. p
+ **   4. p**
 This is how you measure "closeness" between kids.
         ◦ If p=1, it’s like walking in straight lines between kids (like blocks on a grid).
         ◦ If p=2, it’s like imagining a straight shortcut between them (like flying).
-    5. metric
+   ** 5. metric**
 This is the tool you use to measure distance between kids. For most parks, we just use "minkowski", which works with the p value above.
 
 What does leaf_size do?
