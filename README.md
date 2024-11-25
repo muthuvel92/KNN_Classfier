@@ -2,6 +2,7 @@
 Notes from my learning on Step by step instruction for creating a Machine learning Model for Purchase Prediction on Social Media Ads
 
 **KNN Classifier Explanation**
+
 Imagine you’re at a park, and there are lots of kids playing. Some are playing soccer, some are playing basketball, and some are playing on the swings.
 Now, let’s say you see a new kid walk into the park, and you want to guess what they might do. How would you decide?
 You could look at the kids closest to the new kid. If most of the nearby kids are playing soccer, you might guess the new kid will join them. If most are on the swings, you’d guess the new kid will probably head to the swings.
